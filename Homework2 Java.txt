@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Homework2java {
+
+     public static void main(String[] args) {
+         Scanner Scanner = new Scanner(System.in);
+         System.out.println("Enter count of boxes please:");
+         Scanner scanner  = new Scanner(System.in);
+         int countOfBoxes = scanner.nextInt();
+         System.out.println("Enter weight of each single box in kg:");
+         double weightOfSingleBox = Scanner.nextDouble();
+         System.out.println("Enter please full name of recipient:");
+         // ..
+         String nameOfRecipient = scanner.nextLine();
+         System.out.println("Enter please address of recipient:");
+         String addressOfRecipient =scanner.nextLine();
+
+         double totalParcelWeight = countOfBoxes * weightOfSingleBox;
+
+         String label = "Recipient name: \"" + nameOfRecipient.toUpperCase() + "\"\n"
+                 + "Recipient address: \"" + addressOfRecipient.toUpperCase() + "\"\n"
+                 + "Parcel weight: " + totalParcelWeight + " kg";
+
+
+         System.out.println(label);
+
+         System.out.println("is everything correct? true/false");
+         boolean isCorrect = scanner.nextBoolean();
